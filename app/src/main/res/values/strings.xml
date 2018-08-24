@@ -17,26 +17,33 @@
     <string name="niquel">Niquel</string>
     <string name="plata">Plata</string>
     <string name="elige_moneda">Elige un tipo de moneda</string>
+    <string name="seleccione">Seleccione una opcion...</string>
+    <string name="calcular">Calcular</string>
+    <string name="limpiar">Limpiar</string>
+    <string name="resultado">Valor a pagar:</string>
     <string-array name="opMaterial">
+        <item>@string/seleccione</item>
         <item>@string/cuero</item>
         <item>@string/cuerda</item>
     </string-array>
     <string-array name="opDije">
+        <item>@string/seleccione</item>
         <item>@string/ancla</item>
         <item>@string/martillo</item>
     </string-array>
     <string-array name="opTipo">
+        <item>@string/seleccione</item>
         <item>@string/oro</item>
         <item>@string/oro_rosado</item>
         <item>@string/niquel</item>
         <item>@string/plata</item>
     </string-array>
     <string-array name="opMoneda">
+        <item>@string/seleccione</item>
         <item>@string/dolar</item>
         <item>@string/peso</item>
     </string-array>
-    <string name="calcular">Calcular</string>
-    <string name="limpiar">Limpiar</string>
-    <string name="resultado">Valor a pagar:</string>
+
+
 
 </resources>

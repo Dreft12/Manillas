@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Principal"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     tools:layout_editor_absoluteX="8dp"
     tools:layout_editor_absoluteY="8dp"
@@ -19,7 +18,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -113,15 +114,9 @@
             <EditText
                 android:id="@+id/txtCant"
                 android:layout_width="match_parent"
-                android:layout_height="33dp"
+                android:layout_height="48dp"
                 android:ems="10"
                 android:inputType="number" />
-
-            <View
-                android:id="@+id/divider5"
-                android:layout_width="match_parent"
-                android:layout_height="17dp"
-                android:background="?android:attr/listDivider" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -133,6 +128,7 @@
                     android:layout_width="178dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="calcular"
                     android:text="@string/calcular" />
 
                 <Button
