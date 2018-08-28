@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bracelet</string>
+    <string name="titulo">Sale of bracelets</string>
+    <string name="elegir_material">Choose a type of material</string>
+    <string name="elige_dije">Choose a Pendant Type</string>
+    <string name="elegir_tipo">Choose an element type</string>
+    <string name="valor_unitario">Unit Value</string>
+    <string name="peso">Weights</string>
+    <string name="dolar">Dollars</string>
+    <string name="cant_manilla">Number of bracelets to wear</string>
+    <string name="cuero">Leather</string>
+    <string name="cuerda">Rope</string>
+    <string name="martillo">"Hammer "</string>
+    <string name="ancla">Anchor</string>
+    <string name="oro">Gold, Pink Gold</string>
+    <string name="niquel">Nickel</string>
+    <string name="plata">Silver</string>
+    <string name="elige_moneda">Choose a currency type</string>
+    <string name="seleccione">Select an option....</string>
+    <string name="calcular">Calculate</string>
+</resources>
