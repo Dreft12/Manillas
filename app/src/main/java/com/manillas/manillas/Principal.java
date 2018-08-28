@@ -6,16 +6,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 
 import java.util.Locale;
 
 public class Principal extends AppCompatActivity {
-    private Spinner cmbMater, cmbDije, cmbTipo, cmbMoneda;
+    private Spinner cmbMater, cmbDije, cmbTipo;
     private EditText txtCant;
     private TextView txtValor;
     private Resources resources;
+    private RadioButton dolar, pesos;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +27,8 @@ public class Principal extends AppCompatActivity {
         cmbMater = (Spinner) findViewById(R.id.cmbMater);
         cmbDije = (Spinner) findViewById(R.id.cmbDije);
         cmbTipo = (Spinner) findViewById(R.id.cmbTipo);
-        cmbMoneda = (Spinner) findViewById(R.id.cmbMoneda);
+        dolar = (RadioButton) findViewById(R.id.rbtDolar);
+        pesos = (RadioButton) findViewById(R.id.rbtPesos);
         txtCant = (EditText) findViewById(R.id.txtCant);
         txtValor = (TextView) findViewById(R.id.txtValor);
         resources = this.getResources();
@@ -35,18 +40,12 @@ public class Principal extends AppCompatActivity {
         int opMaterial = cmbMater.getSelectedItemPosition();
         int opDije = cmbDije.getSelectedItemPosition();
         int opTipo = cmbTipo.getSelectedItemPosition();
-        int opMoneda = cmbMoneda.getSelectedItemPosition();
-        int valor = Metodos.total(opMaterial,opDije,opTipo,cantidad);
-        switch (opMoneda){
-            case 1:{
-                txtValor.setText(resources.getText(R.string.valordolares) + "$" +Integer.toString(valor));
-                break;
-            }
-            case 2:{
-                txtValor.setText(resources.getText(R.string.valorpesos) + "$" + Integer.toString(Metodos.dolarAPeso(valor)));
-                break;
-            }
-        }
+        int valor = Metodos.total(opMaterial, opDije, opTipo, cantidad);
+        if (dolar.isChecked()) {
+            txtValor.setText(resources.getText(R.string.valordolares) + "$" + Integer.toString(valor));
+        } else if (pesos.isChecked()) {
+            txtValor.setText(resources.getText(R.string.valorpesos) + "$" + Integer.toString(Metodos.dolarAPeso(valor)));
 
+        }
     }
 }

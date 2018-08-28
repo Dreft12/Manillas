@@ -93,11 +93,26 @@
                 android:layout_height="wrap_content"
                 android:text="@string/elige_moneda" />
 
-            <Spinner
-                android:id="@+id/cmbMoneda"
+            <RadioGroup
+                android:id="@+id/grpRadio"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:entries="@array/opMoneda" />
+                android:layout_height="79dp">
+
+                <RadioButton
+                    android:id="@+id/rbtDolar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@string/dolar" />
+
+                <RadioButton
+                    android:id="@+id/rbtPesos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/peso" />
+            </RadioGroup>
 
             <View
                 android:id="@+id/divider4"
@@ -130,14 +145,6 @@
                     android:layout_weight="1"
                     android:onClick="calcular"
                     android:text="@string/calcular" />
-
-                <Button
-                    android:id="@+id/btnLimpiar"
-                    android:layout_width="181dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Button"
-                    tools:text="@string/limpiar" />
 
             </LinearLayout>
 
