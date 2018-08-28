@@ -41,7 +41,8 @@
         <item>@string/dolar</item>
         <item>@string/peso</item>
     </string-array>
-
+    <string name="valordolares">Valor total (Dolares):</string>
+    <string name="valorpesos">Valor total (Pesos):</string>
 
 
 </resources>

@@ -15,6 +15,7 @@ public class Principal extends AppCompatActivity {
     private Spinner cmbMater, cmbDije, cmbTipo, cmbMoneda;
     private EditText txtCant;
     private TextView txtValor;
+    private Resources resources;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +26,7 @@ public class Principal extends AppCompatActivity {
         cmbMoneda = (Spinner) findViewById(R.id.cmbMoneda);
         txtCant = (EditText) findViewById(R.id.txtCant);
         txtValor = (TextView) findViewById(R.id.txtValor);
+        resources = this.getResources();
     }
 
     @SuppressLint("SetTextI18n")
@@ -37,11 +39,11 @@ public class Principal extends AppCompatActivity {
         int valor = Metodos.total(opMaterial,opDije,opTipo,cantidad);
         switch (opMoneda){
             case 1:{
-                txtValor.setText("Valor total (Dolares): " + "$" +Integer.toString(valor));
+                txtValor.setText(resources.getText(R.string.valordolares) + "$" +Integer.toString(valor));
                 break;
             }
             case 2:{
-                txtValor.setText("Valor total (Pesos): " + "$" + Integer.toString(Metodos.dolarAPeso(valor)));
+                txtValor.setText(resources.getText(R.string.valorpesos) + "$" + Integer.toString(Metodos.dolarAPeso(valor)));
                 break;
             }
         }
