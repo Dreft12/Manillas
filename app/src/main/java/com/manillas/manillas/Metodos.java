@@ -22,6 +22,23 @@ public class Metodos {
                                 break;
                             }
                         }
+                        break;
+                    }
+                    case 2:{
+                        switch (opTipo) {
+                            case 1: {
+                                valor = cant * 120;
+                                break;
+                            }
+                            case 2:{
+                                valor = cant * 100;
+                                break;
+                            }
+                            case 3: {
+                                valor = cant * 90;
+                                break;
+                            }
+                        }
                     }
                 }
             }
