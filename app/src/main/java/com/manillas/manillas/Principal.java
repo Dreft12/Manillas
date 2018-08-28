@@ -1,15 +1,20 @@
 package com.manillas.manillas;
 
+import android.annotation.SuppressLint;
 import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
+
+import java.util.Locale;
 
 public class Principal extends AppCompatActivity {
     private Spinner cmbMater, cmbDije, cmbTipo, cmbMoneda;
     private EditText txtCant;
+    private TextView txtValor;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,30 +24,17 @@ public class Principal extends AppCompatActivity {
         cmbTipo = (Spinner) findViewById(R.id.cmbTipo);
         cmbMoneda = (Spinner) findViewById(R.id.cmbMoneda);
         txtCant = (EditText) findViewById(R.id.txtCant);
+        txtValor = (TextView) findViewById(R.id.txtValor);
     }
 
-    public void calcular(View v){
-        int valor = 0;
+    @SuppressLint("SetTextI18n")
+    public void calcular(View v) {
         int cantidad = Integer.parseInt(txtCant.getText().toString().trim());
-        switch (cmbMater.getSelectedItemPosition()){
-            case 1:{
-                switch (cmbDije.getSelectedItemPosition()){
-                    case 1:{
-                        switch (cmbTipo.getSelectedItemPosition()){
-                            case 1:{
-
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        switch (cmbMoneda.getSelectedItemPosition()){
-            case 1:{
-
-            }
-        }
+        int opMaterial = cmbMater.getSelectedItemPosition();
+        int opDije = cmbDije.getSelectedItemPosition();
+        int opTipo = cmbTipo.getSelectedItemPosition();
+        int opMoneda = cmbMoneda.getSelectedItemPosition();
+        int valor = Metodos.total(opMaterial,opDije,opTipo,opMoneda,cantidad);
+        txtValor.setText(Integer.toString(valor));
     }
-
-
 }
