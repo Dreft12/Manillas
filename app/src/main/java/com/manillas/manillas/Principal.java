@@ -34,7 +34,17 @@ public class Principal extends AppCompatActivity {
         int opDije = cmbDije.getSelectedItemPosition();
         int opTipo = cmbTipo.getSelectedItemPosition();
         int opMoneda = cmbMoneda.getSelectedItemPosition();
-        int valor = Metodos.total(opMaterial,opDije,opTipo,opMoneda,cantidad);
-        txtValor.setText(Integer.toString(valor));
+        int valor = Metodos.total(opMaterial,opDije,opTipo,cantidad);
+        switch (opMoneda){
+            case 1:{
+                txtValor.setText("Valor total (Dolares): " + "$" +Integer.toString(valor));
+                break;
+            }
+            case 2:{
+                txtValor.setText("Valor total (Pesos): " + "$" + Integer.toString(Metodos.dolarAPeso(valor)));
+                break;
+            }
+        }
+
     }
 }

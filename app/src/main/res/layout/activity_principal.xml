@@ -145,7 +145,8 @@
                 android:id="@+id/txtValor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/resultado" />
+                android:text="@string/resultado"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 
         </LinearLayout>
     </LinearLayout>
