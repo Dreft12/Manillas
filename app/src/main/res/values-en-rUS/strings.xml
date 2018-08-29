@@ -23,4 +23,8 @@
     <string name="resultado">Value to pay:</string>
     <string name="valordolares">Total value (Dollars)</string>
     <string name="valorpesos">Total value (Weights)</string>
+    <string name="seleccioneMaterial">"Please, select a valid material. "</string>
+    <string name="seleccioneDije">Please, select a pendant valid.</string>
+    <string name="seleccioneTipo">Please, select a kind valid.</string>
+    <string name="cantidadInvalida">Please, enter a amount valid</string>
 </resources>

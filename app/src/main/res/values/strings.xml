@@ -43,6 +43,10 @@
     </string-array>
     <string name="valordolares">Valor total (Dolares):</string>
     <string name="valorpesos">Valor total (Pesos):</string>
+    <string name="seleccioneMaterial">Por favor, seleccione un material valido.</string>
+    <string name="seleccioneDije">Por favor, seleccione un dije valido.</string>
+    <string name="seleccioneTipo">Por favor, seleccione un tipo valido.</string>
+    <string name="cantidadInvalida">Por favor, ingrese una cantidad valida</string>
 
 
 </resources>

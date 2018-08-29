@@ -10,6 +10,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Locale;
 
@@ -40,12 +41,27 @@ public class Principal extends AppCompatActivity {
         int opMaterial = cmbMater.getSelectedItemPosition();
         int opDije = cmbDije.getSelectedItemPosition();
         int opTipo = cmbTipo.getSelectedItemPosition();
-        int valor = Metodos.total(opMaterial, opDije, opTipo, cantidad);
-        if (dolar.isChecked()) {
-            txtValor.setText(resources.getText(R.string.valordolares) + "$" + Integer.toString(valor));
-        } else if (pesos.isChecked()) {
-            txtValor.setText(resources.getText(R.string.valorpesos) + "$" + Integer.toString(Metodos.dolarAPeso(valor)));
-
+        if(opMaterial == 0){
+            if(opDije == 0){
+                if (opTipo == 0){
+                    if (cantidad > 0){
+                        int valor = Metodos.total(opMaterial, opDije, opTipo, cantidad);
+                        if (dolar.isChecked()) {
+                            txtValor.setText(resources.getText(R.string.valordolares) + "$" + Integer.toString(valor));
+                        } else if (pesos.isChecked()) {
+                            txtValor.setText(resources.getText(R.string.valorpesos) + "$" + Integer.toString(Metodos.dolarAPeso(valor)));
+                        }
+                    }else {
+                        Toast.makeText(this, resources.getText(R.string.cantidadInvalida), Toast.LENGTH_LONG).show();
+                    }
+                }else{
+                    Toast.makeText(this, resources.getText(R.string.seleccioneTipo), Toast.LENGTH_LONG).show();
+                }
+            }else{
+                Toast.makeText(this, resources.getText(R.string.seleccioneDije), Toast.LENGTH_LONG).show();
+            }
+        }else{
+            Toast.makeText(this, resources.getText(R.string.seleccioneMaterial), Toast.LENGTH_LONG).show();
         }
     }
 

@@ -37,13 +37,15 @@
                 android:id="@+id/txtTipoM"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/elegir_material" />
+                android:text="@string/elegir_material"
+                android:textColor="@color/text_color_primary" />
 
             <Spinner
                 android:id="@+id/cmbMater"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
-                android:entries="@array/opMaterial" />
+                android:entries="@array/opMaterial"
+                android:popupBackground="@color/colorPrimary" />
 
             <View
                 android:id="@+id/divider"
@@ -55,13 +57,15 @@
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/elige_dije" />
+                android:text="@string/elige_dije"
+                android:textColor="@color/text_color_primary" />
 
             <Spinner
                 android:id="@+id/cmbDije"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:entries="@array/opDije" />
+                android:entries="@array/opDije"
+                android:popupBackground="@color/colorPrimary" />
 
             <View
                 android:id="@+id/divider2"
@@ -73,13 +77,15 @@
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/elegir_tipo" />
+                android:text="@string/elegir_tipo"
+                android:textColor="@color/text_color_primary" />
 
             <Spinner
                 android:id="@+id/cmbTipo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:entries="@array/opTipo" />
+                android:entries="@array/opTipo"
+                android:popupBackground="@color/colorPrimary" />
 
             <View
                 android:id="@+id/divider3"
@@ -91,7 +97,8 @@
                 android:id="@+id/textView5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/elige_moneda" />
+                android:text="@string/elige_moneda"
+                android:textColor="@color/text_color_primary" />
 
             <RadioGroup
                 android:id="@+id/grpRadio"
@@ -103,15 +110,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:buttonTint="@android:color/darker_gray"
                     android:checked="true"
-                    android:text="@string/dolar" />
+                    android:text="@string/dolar"
+                    android:textColor="@color/text_color_primary" />
 
                 <RadioButton
                     android:id="@+id/rbtPesos"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/peso" />
+                    android:buttonTint="@android:color/darker_gray"
+                    android:text="@string/peso"
+                    android:textColor="@color/text_color_primary" />
             </RadioGroup>
 
             <View
@@ -124,14 +135,16 @@
                 android:id="@+id/textView6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/cant_manilla" />
+                android:text="@string/cant_manilla"
+                android:textColor="@color/text_color_primary" />
 
             <EditText
                 android:id="@+id/txtCant"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:ems="10"
-                android:inputType="number" />
+                android:inputType="number"
+                android:textColor="@color/text_color_primary" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -143,6 +156,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:backgroundTint="@color/colorPrimaryDark"
                     android:onClick="calcular"
                     android:text="@string/calcular" />
 
@@ -151,6 +166,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:backgroundTint="@color/colorPrimaryDark"
                     android:onClick="limpiar"
                     android:text="@string/limpiar" />
 
