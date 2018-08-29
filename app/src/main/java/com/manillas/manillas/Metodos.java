@@ -13,11 +13,15 @@ public class Metodos {
                                 valor = cant * 100;
                                 break;
                             }
-                            case 2:{
+                            case 2: {
+                                valor = cant * 100;
+                                break;
+                            }
+                            case 3:{
                                 valor = cant * 80;
                                 break;
                             }
-                            case 3: {
+                            case 4: {
                                 valor = cant * 70;
                                 break;
                             }
@@ -30,11 +34,15 @@ public class Metodos {
                                 valor = cant * 120;
                                 break;
                             }
-                            case 2:{
+                            case 2: {
+                                valor = cant * 120;
+                                break;
+                            }
+                            case 3:{
                                 valor = cant * 100;
                                 break;
                             }
-                            case 3: {
+                            case 4: {
                                 valor = cant * 90;
                                 break;
                             }
@@ -52,11 +60,15 @@ public class Metodos {
                                 valor = cant * 90;
                                 break;
                             }
-                            case 2:{
+                            case 2: {
+                                valor = cant * 90;
+                                break;
+                            }
+                            case 3:{
                                 valor = cant * 70;
                                 break;
                             }
-                            case 3: {
+                            case 4: {
                                 valor = cant * 50;
                                 break;
                             }
@@ -69,11 +81,15 @@ public class Metodos {
                                 valor = cant * 110;
                                 break;
                             }
-                            case 2:{
+                            case 2: {
+                                valor = cant * 110;
+                                break;
+                            }
+                            case 3:{
                                 valor = cant * 90;
                                 break;
                             }
-                            case 3: {
+                            case 4: {
                                 valor = cant * 80;
                                 break;
                             }

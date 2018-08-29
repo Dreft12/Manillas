@@ -12,7 +12,8 @@
     <string name="cuerda">Cuerda</string>
     <string name="martillo">Martillo</string>
     <string name="ancla">Ancla</string>
-    <string name="oro">Oro, Oro Rosado</string>
+    <string name="oro">Oro</string>
+    <string name="oroRosado">Oro Rosado</string>
     <string name="niquel">Niquel</string>
     <string name="plata">Plata</string>
     <string name="elige_moneda">Elige un tipo de moneda</string>
@@ -33,6 +34,7 @@
     <string-array name="opTipo">
         <item>@string/seleccione</item>
         <item>@string/oro</item>
+        <item>@string/oroRosado</item>
         <item>@string/plata</item>
         <item>@string/niquel</item>
     </string-array>

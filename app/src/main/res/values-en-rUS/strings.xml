@@ -28,4 +28,5 @@
     <string name="seleccioneTipo">Please, select a kind valid.</string>
     <string name="cantidadInvalida">Please, enter a amount valid</string>
     <string name="cantidadVacia">Please, enter a value in amount</string>
+    <string name="oroRosado">Pink gold</string>
 </resources>
