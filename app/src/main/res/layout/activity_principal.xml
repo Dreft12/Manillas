@@ -140,11 +140,19 @@
 
                 <Button
                     android:id="@+id/btnCalcular"
-                    android:layout_width="178dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:onClick="calcular"
                     android:text="@string/calcular" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="limpiar"
+                    android:text="@string/limpiar" />
 
             </LinearLayout>
 

@@ -48,4 +48,13 @@ public class Principal extends AppCompatActivity {
 
         }
     }
+
+    public void limpiar(View v){
+        cmbDije.setSelection(0);
+        cmbMater.setSelection(0);
+        cmbTipo.setSelection(0);
+        txtValor.setText(resources.getText(R.string.resultado));
+        txtCant.setText("");
+        dolar.setChecked(true);
+    }
 }
