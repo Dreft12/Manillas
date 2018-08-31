@@ -13,7 +13,7 @@
     <string name="cuerda">Rope</string>
     <string name="martillo">"Hammer "</string>
     <string name="ancla">Anchor</string>
-    <string name="oro">Gold, Pink Gold</string>
+    <string name="oro">Gold</string>
     <string name="niquel">Nickel</string>
     <string name="plata">Silver</string>
     <string name="elige_moneda">Choose a currency type</string>
